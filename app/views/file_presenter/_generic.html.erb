@@ -1,0 +1,5 @@
+<div class="uploaded-file-description <%= 'empty' if generic.abstract.blank? %>">
+  <%= generic.abstract %>
+</div>
+
+<%= button(:download, _('Download'), [Noosfero.root, generic.public_filename].join, class:'download-link', option:'primary', size:'lg') %>

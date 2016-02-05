@@ -1,0 +1,22 @@
+<h1><%= h profile.short_name(50) %></h1>
+
+<h2><%= _('Send e-mail to members') %></h2>
+
+<%= error_messages_for :mailing %>
+
+<% if @email_templates.present? %>
+  <div class="template-selection">
+    <%= labelled_form_field(_('Select a template:'), select_tag(:template, options_from_collection_for_select(@email_templates, :id, :name), :include_blank => true, 'data-url' => url_for(:controller => 'profile_email_templates', :action => 'show_parsed'))) %>
+  </div>
+<% end %>
+
+<%= form_for :mailing, :url => {:action => 'send_mail'}, :html => {:id => 'mailing-form'} do |f| %>
+
+  <%= labelled_form_field(_('Subject:'), f.text_field(:subject)) %>
+
+  <%= render :file => 'shared/tiny_mce' %>
+  <%= labelled_form_field(_('Body:'), f.text_area(:body, :class => 'mceEditor')) %>
+
+  <%= submit_button(:send, _('Send')) %>
+  <%= button :cancel, _('Cancel e-mail'), :back %>
+<% end %>

@@ -1,0 +1,34 @@
+<% self.extend CustomFormsPlugin::Helper %>
+
+<h1><%= _('Submissions for %s') % @form.name %></h1>
+
+<% if @form.submissions.empty? %>
+  <%= _('There are no submissions for this form.') %>
+<% else %>
+  <p>
+    <%= _('Download all form responses as') %>:
+    <%= link_to '[CSV]', :format => 'csv' %>
+  </p>
+  <p>
+    <%= labelled_select(_('Sort by')+': ', :sort_by, :first, :last, @sort_by, [['created_at', _('Time')], ['author_name', c_('Author')]], :class => 'filter') %>
+  </p>
+  <table class="action-table">
+    <tr>
+      <th style='width: 50%'><%= c_('Author') %></th>
+      <th style='width: 50%'><%= _('Time') %></th>
+    </tr>
+    <% @submissions.each do |submission| %>
+      <tr>
+        <% author = submission.profile.present? ? submission.profile.name : submission.author_name %>
+        <td><%= link_to(author, {:action => 'show_submission', :id => submission.id}) %></td>
+        <td><%= time_format(submission.created_at) %></td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>
+
+<% button_bar do %>
+  <%= button :back, _('Back to forms'), :action => 'index' %>
+<% end %>
+
+<%= javascript_include_tag 'plugins/custom_forms/order' %>

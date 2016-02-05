@@ -1,0 +1,120 @@
+.controller-profile_editor a.control-panel-custom-forms,
+.controller-profile_editor .msie6 a.control-panel-custom-forms {
+  background-image: url(/plugins/custom_forms/icons/custom-forms.png)
+}
+
+.action-table {
+  width: 100%;
+  overflow: hidden;
+}
+
+.action-table th,
+.action-table td{
+  text-align: center;
+}
+
+.action-table .actions{
+  white-space: nowrap;
+  text-align: left;
+}
+
+.action-table .new-item{
+  background-color: #EEE;
+}
+
+.edit-information {
+  display: none;
+}
+.modal .edit-information {
+  display: block;
+}
+
+.field-box {
+  margin: 10px 0;
+}
+
+.field-box > div {
+  overflow: hide;
+}
+
+.field-box .button {
+  margin-left: 15px;
+}
+
+.field-box .addition-buttons .button {
+  margin: 0px;
+}
+
+.field-box .required-field label{
+  font-weight: bold;
+  color: #c00;
+}
+.field-box .required-field label:after {
+  content: ' (*)';
+}
+
+.field-select-type {
+  margin: 10px 0;
+}
+
+.field-text-default {
+  margin-top: 10px;
+}
+
+.field-list, .default-field-list {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.field-list {
+  cursor: move;
+}
+
+.field-list label, .field-list legend {
+  cursor: move;
+}
+
+ul.field-list > li > fieldset:hover {
+  border: 2px dotted #BBB;
+}
+
+tr.addition-buttons {
+  cursor: auto;
+}
+
+#ui-datepicker-div {
+  border: 1px solid #CCC;
+}
+.ui-slider-horizontal {
+  border: 1px solid #BBB;
+  border-radius: 4px;
+}
+
+#custom-forms-plugin_submission .notify {
+  padding: 8px;
+  color: rgba(0,0,0,0.5);
+}
+
+#custom-forms-plugin_submission-view th {
+  border: none;
+  text-align: right;
+}
+#custom-forms-plugin_submission-view td {
+  padding: 5px 0;
+}
+
+#custom-forms-plugin_submission-view td img {
+  vertical-align: middle;
+}
+
+#custom-forms-plugin_submission-view td ul {
+  padding: 0;
+  margin: 0;
+}
+#custom-forms-plugin_submission-view td li {
+  list-style: none;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><rect x="3.5" y="3.5" width="10" height="10" fill="black" stroke="black" fill-opacity="0.2" opacity="0.4" ry="1"/><path d="M 4,5 8.5,13 16,0 8.5,8.5 z"/></svg>') no-repeat 0 50%;
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+
