@@ -1,0 +1,1197 @@
+/*(amarelo-claro=#fcdd4e)*/
+/*(amarelo-escuro=#f9c404)*/
+/****************** cabecalho ******************/
+#theme-header{height: auto;}
+
+#header {
+	padding: 13px 0 0 0;
+background-color: #fcdd4e;/*(amarelo-claro)*/
+ /* Old browsers */
+	background-color: #f9c404; /*(amarelo-escuro)*/
+	background-image: -moz-radial-gradient(center, ellipse cover,  #fcdd4e 1%, #f9c404 100%); /*(amarelo-claro)(amarelo-escuro)*/
+ /* FF3.6+ */
+	background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%,#fcdd4e), color-stop(100%,#f9c404));
+ /* Chrome,Safari4+ */
+	background-image: -webkit-radial-gradient(center, ellipse cover,  #fcdd4e 1%,#f9c404 100%);
+ /* Chrome10+,Safari5.1+ */
+	background-image: -o-radial-gradient(center, ellipse cover,  #fcdd4e 1%,#f9c404 100%);
+ /* Opera 12+ */
+	background-image: -ms-radial-gradient(center, ellipse cover,  #fcdd4e 1%,#f9c404 100%);
+ /* IE10+ */
+	background-image: radial-gradient(ellipse at center,  #fcdd4e 1%,#f9c404 100%);
+ /* W3C */
+/*	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcdd4e', endColorstr='#f9c404',GradientType=1 );*/
+ /* IE6-9 fallback on horizontal gradient */
+	color: #fff;
+}
+
+#header>div {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.header-content * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	vertical-align: baseline;
+}
+
+.header-content {
+	height: 5px;
+	transition-duration: 0.6s;
+	overflow: hidden;
+}
+
+.header-content:hover,
+.header-content *:focus + .header-content,
+.header-content *:focus > .header-content {
+	height: 173px;
+}
+
+.header-content li { display: inline; }
+
+#brasilgov {
+	background: #00510f;
+	border-bottom: 1px solid #ffcc00;
+	padding: 5px 10px;
+	color: #03316f;
+}
+
+#accessibility {
+    display: block !important;
+    float: left;
+    font-family: arial;
+    font-size: 10px;
+    width: 50%;
+}
+
+#accessibility a {
+	color: #00500f;
+	margin-right: 8px;
+}
+
+#accessibility span {
+    background: none repeat scroll 0 0 #497B16;
+    color: #FFFFFF;
+    padding: 0 4px;
+}
+
+
+
+/* logo */
+#logo {
+	padding: 0;
+	float: left;
+	width: 70%;
+}
+
+#logo span {
+	display: block;
+}
+
+#logo a {
+	display: block;
+	width: 100%;
+	color: #03316f !important;
+	margin: 1em 0px;
+}
+
+#logo a, #logo #portal-title {
+  color: #03316f;
+}
+
+#logo #portal-title {
+  margin: 30px 0px 46px 0px;
+  color: #03316f;
+  font-size: 40px;
+  font-family: 'Open Sans Extrabold', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  line-height: 1em;
+  letter-spacing: -0.05em;
+}
+
+#logo .luongo {
+	font-size: 3em !important;
+	line-height: 1.1em;
+	margin-bottom: 0.2em;
+}
+
+#logo #portal-description {
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+/* Site Actions */
+#portal-siteactions {
+	display: block;
+	float: right;
+	clear: left;
+	border-bottom: 1px dotted #00500f;
+	padding-bottom: 2px;
+	margin-top: -15px;
+	font-size: 10px;
+	text-align: center;
+}
+
+#portal-siteactions a {
+	color: #00500f;
+	text-decoration: none;
+	padding: 4px 0 4px 10px;
+	text-transform: uppercase;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+#portal-siteactions a:hover {
+	color: #03316f;
+}
+
+#portal-siteactions li {
+	display: inline;
+}
+
+#portal-siteactions li a:hover {
+color: #75ad0a
+}
+#portal-siteactions li a {
+  padding: 4px 0px;
+}
+
+#social-icons {
+	float: right;
+	clear: right;
+	margin: 0px;
+}
+
+#social-icons ul {
+	display: table-row;
+}
+
+#social-icons li {
+	display: table-cell;
+}
+
+#social-icons li a {
+	border: none;
+	padding: 0 5px;
+}
+
+#siteaction-accessibility,
+#siteaction-contraste {
+  margin: 0px 15px 0px 0px;
+}
+/* */
+
+/* Top links */
+#theme-header .header-content #link-faq a {
+    border-right: 1px solid #00500f;
+    padding: 0 10px;
+}
+#theme-header .header-content #link-contact a {
+    padding-left: 10px;
+}
+
+#theme-header #sobre {
+    line-height: 20px;
+	 font-size: 12px;
+}
+/* */
+
+/* Sobre o brasil */
+#sobre {
+	clear: both;
+	max-width: 100% !important;
+	margin: 0;
+	background: #f8c300;/*amarelo-mais-escuro*/
+	padding: 5px 0;
+}
+
+#sobre ul {
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: right;
+}
+
+#sobre a {
+	color: #00500f;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+#sobre .portalservicos-item a {
+	padding: 0 10px;
+	border-right: 1px solid #03316f;
+}
+
+#sobre .last-item a {
+	padding: 0 0 0 10px;
+	border-right: none;
+}
+
+/* Searchbox */
+.LSBox {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+input.searchField {
+	-moz-appearance: none;
+}
+
+#portal-searchbox {
+	clear: right;
+	float: right;
+	font-size: 80%;
+	margin: 30px 0 14px;
+	/*margin: 3.12em 0px 3px 0px;*/
+	text-align: right;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #CCCCCC;
+	background: #fff;
+	padding: 2px;
+}
+
+#portal-searchbox .searchField {
+	padding: 0.45em;
+	border-right: none;
+	border: none;
+  width: 170px;
+}
+
+#portal-searchbox form {
+white-space: nowrap;
+}
+
+#portal-searchbox label {
+font-weight: normal;
+}
+
+#searchGadget {
+width: 13em;
+}
+
+#header input.searchButton {
+	padding: 0.3em;
+	background: transparent;
+	text-indent: -2000px;
+	padding: 4px 15px;
+	border: none;
+}
+
+#content input.searchField {
+margin-bottom: 1em;
+}
+input.searchField {
+-moz-appearance: searchfield;
+}
+
+#header input.searchButton {
+  background-image: url("images/search-button.gif");
+  background-position: 8px 2px;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
+
+#LSResult {
+	z-index: 1;
+	margin-top: 0.5%;
+}
+
+
+/* Search Button */
+#search-button a {
+    display: inline-block;
+    width: 29px;
+    height: 25px;
+    margin-right: 3px;
+    margin-top: 10px;
+}
+
+#search-button a:hover {
+    opacity: 0.6;
+}
+
+#search-button #sb_search {
+background-image: url(images/search.png);
+background-size: 100% 100%;
+}
+
+#search-button span { display: none; }
+
+
+/* */
+
+/* Social Buttons */
+#social-buttons a {
+    width: 18px;
+    height: 20px;
+    margin-right: 3px;
+    margin-top: 10px;
+}
+
+#social-icons li a {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+#social-icons li {
+    float: right;
+    width: 20px;
+    margin-left: 4px;
+}
+
+#social-icons #sb_face {
+background-image: url(images/icone-verde-facebook.png);
+}
+#social-icons #sb_face:hover {
+background: url(images/icone-verde-facebook.png) 0 20px;
+}
+
+#social-icons #sb_tweet {
+background-image: url(images/icone-verde-twitter.png);
+}
+#social-icons #sb_tweet:hover {
+background: url(images/icone-verde-twitter.png) 0 20px;
+}
+
+#social-icons #sb_youtb {
+background-image: url(images/icone-verde-youtube.png);
+}
+#social-icons #sb_youtb:hover {
+background: url(images/icone-verde-youtube.png) 0 20px;
+}
+
+#social-icons #sb_flickr {
+background-image: url(images/icone-verde-flickr.png);
+}
+#social-icons #sb_flickr:hover {
+background: url(images/icone-verde-flickr.png) 0 20px;
+}
+
+#social-icons span { display: none; }
+
+/* FIM social Buttons */
+
+/****************** FIM cabecalho ******************/
+
+
+
+/****************** Barra do usuário e Espaço do usuário ******************/
+
+/********ABA Lateral - Espaço do Usuário**********/
+/*escondendo e revelando a aba lateral*/
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+div#wrap-1,div#wrap-0,div#theme-footer {
+  transition-duration: 0.6s;
+  -webkit-transition-duration:0.6s;
+}
+div#wrap-1,div#theme-footer {float: right;width:100%;}
+div#wrap-1.menu,div#theme-footer.menu {width: 80%;}
+div#wrap-0.menu{/*width: 20%*/; /*float: left;height: 1px;*/}
+
+/*Propriedades da aba lateral e elementos internos*/
+#navigation-control {
+	width: 0%;
+	transition: 0.6s;
+	/*position: absolute;*/
+	position: fixed;
+	left: 0px;
+	display: inline-block;
+	background-color: transparent;
+	color: black;
+	z-index: -1;
+	font-size:80%;
+}
+
+.menu #navigation-control {width: 20%;}
+
+#navigation-control a{}
+
+#navigation-control ul li {
+	margin: 10px 0;
+	text-align: left;
+	list-style: none;
+}
+
+#navigation-control ul li a.button.with-text,
+#navigation-control ul li a.button.with-text:visited {
+	border: 0px solid #AAA;
+}
+
+#navigation-control ul li a span {
+	background-repeat: no-repeat;
+	/*padding-left: 25px;*/
+}
+
+/**/
+#navigation-control .perfil{
+	display: inline-block;
+	background-color: gray;
+	width: 100%;
+}
+
+#navigation-control .perfil ul{padding-left: 0;}
+
+#navigation-control .perfil ul li{}
+
+#navigation-control .perfil .name{text-align: center;}
+
+#navigation-control .perfil .name h1{color: #fff;}
+
+#navigation-control .perfil .picture{display: inline-block;width: 100%;text-align: center;}
+
+#navigation-control .perfil .picture img{max-width: 140px; max-height: 140px;overflow: hidden;/*border-radius: 50%;border: 1px solid red;*/}
+
+#navigation-control .perfil .tasks_inner{cursor:pointer; color: #fff;display: inline-block;width: 49%;text-align: center;background: url(images/barra-menu-task.png) no-repeat 10px center gray;}
+
+#navigation-control .perfil .user_status{cursor:pointer; display:inline-block; width:49% ; text-align: center;}
+
+#navigation-control .perfil .online{color: greenyellow;}
+#navigation-control .perfil .busy{color: red;}
+#navigation-control .perfil .away{color: yellow;}
+#navigation-control .perfil .offline{color: #ccc;}
+
+#navigation-control .perfil .online span{font-size: large;vertical-align: -1px;}
+
+
+#navigation-control .menu_user{margin-top: 0;}
+
+#navigation-control .menu_user .activity_menu {margin-top: 0;padding: 0;border-top: 1px solid #ddd;}
+
+#navigation-control .menu_user .activity_menu .activity_menu_item{
+  color: #ddd;
+  background-color: gray;
+  padding: 0 28px;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+  height: 40px;
+}
+
+#navigation-control .menu_user .activity_menu .activity_menu_item * {
+  line-height: 40px;
+}
+#navigation-control .menu_user .activity_menu .activity_menu_item a {
+  display: inline-block;
+  width: 100%;
+}
+
+#navigation-control .menu_user .activity_menu .activity_menu_item:hover {background-color: #ddd; color: #333;}
+
+#navigation-control .menu_user .activity_menu .activity_menu_item .arrow{float: right;}
+
+#navigation-control .menu_user .activity_menu .activity_menu_item .quick_post{padding: 14px;background-color: #fff;margin-top: 10px;display: none;}
+
+/********FIM ABA Lateral - Espaço do Usuário**********/
+
+
+/****************** Barra do usuário ******************/
+#top-bar {
+    position: relative;
+    height: 40px;
+    margin: auto;
+    background: url(images/top-bar-bg.png) repeat-x;
+}
+
+#top-bar.top {
+	background-color: #fff;
+  height: 40px;
+}
+
+#top-bar li {
+  float: left;
+}
+
+
+/*****Botões da barra do usuário - Menu - Pendẽncias - Mensagens *****/
+.btn_control_panel {
+	min-width: 40px;
+	height: 40px;
+	color: #999;
+	margin-top: 0;
+	margin-right: -3px;
+	display: inline-block;
+	/*float: left;*/
+	vertical-align:top;
+	cursor: pointer;
+	border-right: 1px solid #999;
+	opacity:0.4;
+	filter:alpha(opacity=40);
+	padding: 0px 0px 0 35px;
+	position:relative;
+	/*z-index: 99;*/
+}
+
+#user .logged-in #pending-tasks-count {
+  background-color: #eee;
+  padding-left: 15px;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  margin-left: 15px;
+  height: 40px;
+  display: inline-block;
+}
+#user .logged-in #pending-tasks-count i {
+  left: 0;
+}
+
+#theme-header .btn_control_panel #user a:hover {
+  background-color: #eee;
+  opacity:0.8;
+  filter:alpha(opacity=80);
+}
+#theme-header .btn_control_panel #user a {
+  display: inline-block;
+  margin: 0;
+}
+#theme-header .btn_control_panel #user a strong {
+  line-height: 40px;
+  padding: 10px 5px 10px 33px;
+}
+#theme-header .btn_control_panel #user a span {
+  line-height: 40px;
+}
+#theme-header .btn_control_panel #user a i {
+  left: 10px;
+  top: 12px;
+}
+#theme-header .btn_control_panel #user a .task-count {
+  padding: 5px;
+  margin-left: 16px;
+}
+#theme-header .btn_control_panel #user .ctrl-panel {
+  display: none;
+}
+
+/*
+#theme-header .btn_control_panel #user a strong:hover {
+  line-height: 40px;
+}*/
+
+.btn_control_panel span{
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: white;
+  padding: 3px;
+  color: #333;
+  display: inline;
+}
+
+a.btn_control_panel span{margin:0px; border: 0px solid gray;border-radius: 0px; background-color: transparent; padding: 0px;color: #333;display: inline-block;height: 35px;}
+
+.btn_control_panel ul {padding-left: 0;text-align: left;margin: 0;padding: 1em}
+
+.btn_control_panel ul li {display: none;padding-left: 0;text-align: left;margin: 0;padding: 1em}
+
+a.btn_control_panel:hover ul li{display: block;}
+
+.btn_control_panel ul li ul {display: none;}
+
+.btn_control_panel ul.menu_conteudo li:hover ul {display: inline-block}
+
+.btn_control_panel.btn_control {padding: 0;}
+
+/*****FIM Botões da barra do usuário - Menu - Pendẽncias - Mensagens *****/
+
+/*.btn_control,*/
+.btn_menu {
+	background: url(images/barra-menu-control.png) no-repeat 14px center #eee;
+	padding-left: 10px;
+}
+
+#navigation ul li#btn_profile {
+  border-left: 0;
+  padding: 0;
+  margin: 5px 10px;
+}
+#navigation ul li#btn_profile a {
+  border-left: 0;
+  padding: 0 10px;
+}
+#navigation ul li#btn_profile a img {
+  vertical-align: middle;
+}
+#navigation ul li#btn_profile span {
+  background: none;
+  padding: 0 0 0 5px;
+  color: rgb(170, 170, 170);
+  font-weight: bold;
+}
+
+.icon-menu-tasks {
+	background-image: url(images/barra-menu-task.png);
+}
+
+.btn_msg {
+	background: url(images/barra-menu-mail.png) no-repeat 10px center #eee;
+}
+
+
+/*tarefas da barra do usuário*/
+.task_list {
+	position: absolute;
+	background: #eee;
+	z-index: 9999;
+   margin-left: 50px;
+	visibility: visible;
+	display: block;
+}
+
+#msg_list.task_list {margin-left: 122px;}
+
+.task_list ul {display: inline-block;padding-left: 0;}
+
+.task_list ul li {
+	float: none;
+	display: block;
+	padding: 10px;
+}
+.task_list ul .task_box {
+	border-bottom: 1px solid #ccc;
+	padding:16px;
+}
+
+.task_icon {
+	float: left;
+	margin-right: 14px;
+}
+
+.task_list ul .task_decisions {
+	clear: right;
+}
+
+.task_information {
+	display: inline-block;
+	width: 300px;
+}
+
+.task_list ul .task_title {margin-right: 0px !important}
+
+.task_list .button-bar{float: right;margin-right: 10px;}
+
+.task_list .button-bar a.button.with-text {
+	padding: 5px 10px;
+	padding-left: 20px;
+	padding-right: 5px;
+}
+.task_list .button-bar input.button.with-text {
+	max-height: 32px;
+	height: 32px;
+	padding: 0 25px;
+	padding-right: 10px;
+}
+
+.task_list.hide {display: none; visibility: hidden;}
+
+/*FIM tarefas da barra do usuário*/
+
+
+/**/
+
+/************* Bar Psocial Style - Menu Horizontal**************/
+
+#user{
+  font-size: 12px;
+  position: static;
+  z-index: 9;
+}
+
+#user form {
+  top: -32px;
+  right: -200px;
+}
+
+#user form input {
+  width: 180px;
+  height: 20px;
+}
+
+#user .logged-in {
+	 visibility: hidden;
+	 display: block;
+   background:url("images/barra-menu-user-bg.png") repeat-x bottom center #FEFEFE;
+   display: block;
+   padding: 0;
+   text-align: left;
+   width: 130px;
+ 	 border-radius: 10px
+}
+
+#user .logged-in:hover {
+	 visibility: visible;
+}
+#user .logged-in a#homepage-link {
+	visibility: visible;
+}
+
+
+#user .logged-in span.welcome {
+  display: none;
+}
+
+#user .logged-in a {
+	width: auto;
+}
+
+/*info do usuário na barra do usuário*/
+#top-bar .layout_user #user .logged-in a{text-decoration: none;}
+
+#top-bar .layout_user #user .logged-in {
+	visibility: visible;
+	display: block;
+	background: none;
+	display: block;
+	text-align: left;
+	width: auto;
+	border-radius: 0;
+	border: 0px;
+}
+
+.btn_control_panel #user span.not-logged-in,
+.btn_control_panel #user span.not-logged-in span {
+margin: 5px 5px 5px 5px;
+border: 0;
+background-color: transparent;
+padding: 3px;
+color: #333;
+}
+
+#top-bar .layout_user #user .not-logged-in a{text-decoration: none;}
+
+/*info do usuário no espaço do usuário*/
+#navigation-control{
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background-color:gray;
+}
+
+#navigation-control #user{margin-top: 0;width: 300px;}
+
+
+#navigation-control #user .logged-in {
+	visibility: visible;
+	display: block;
+	background: none;
+	display: block;
+	padding: 5px;
+	text-align: left;
+	width: auto;
+	border-radius: 0;
+	border: 0px;
+	margin-top: 0;
+	padding: 0;
+	border-top: 0px solid #DDD;
+}
+
+#navigation-control #user .logged-in a {
+	text-decoration: none;
+	color: #DDD;
+	background-color: #808080;
+	padding: 14px 28px;
+	margin: 0;
+	border-bottom: 1px solid #DDD;
+}
+
+#navigation-control #user .logged-in a strong {
+font-weight: normal;
+color: #DDD;
+background-color: #808080;
+padding: 14px;
+margin: 0;
+border-bottom: 0px solid #DDD;
+font-size: 16px;
+font-family: Arial, sans-serif;
+text-decoration: none;
+}
+
+#navigation-control .menu_user .activity_menu{border-top: 0px solid #DDD;}
+
+
+/*modificação da scroll bar DO ESPAÇO DO USUÁRIO*/
+#navigation-control::-webkit-scrollbar-button {
+	height: 0;
+	width: 0;
+}
+
+#navigation-control::-webkit-scrollbar-thumb {
+	background-clip: padding-box;
+	background-color: gray;/*rgba(0,0,0,.3);*/
+	border: 5px solid transparent;
+	border-radius: 10px;
+	min-height: 20px;
+	min-width: 20px;
+	height: 5px;
+	width: 5px;
+}
+
+#navigation-control::-webkit-scrollbar-thumb:hover {
+	background-clip: padding-box;
+	background-color: #eee;/*rgba(0,0,0,.3);*/
+	border: 5px solid transparent;
+	border-radius: 10px;
+	min-height: 20px;
+	min-width: 20px;
+	height: 5px;
+	width: 5px;
+}
+
+
+#navigation-control::-webkit-scrollbar {
+	height: 15px;
+	width: 15px;
+}
+
+/*fim de modificação da scroll bar DO ESPAÇO DO USUÁRIO */
+
+/****************** FIM Barra do usuário ******************/
+
+/****************** FIM Barra do usuário e Menu do usuário ******************/
+
+
+/****************** Painel de Controle ******************/
+
+.btn_home {
+	margin-right: 14px;
+	float: right;
+  line-height: 40px;
+}
+
+.btn_home a{
+	display: inline-block;
+	text-decoration: none;
+	margin-left: 5px;
+  width: 35px;
+	background: url("images/logo.png") no-repeat left center transparent;
+}
+
+/*Botão Painel de controle*/
+
+#btn_open_control_panel {
+/*	float: right;*/
+/*	width: 100%;*/
+	background-color: #eee;
+	position: relative;
+	padding: 0 14px;
+	text-decoration: none;
+	font-size: small;
+	color: #666;
+}
+
+#navigation li span {
+	position: relative;
+	background: url("images/20-gear2.png") no-repeat left center transparent;
+	padding-left: 30px;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	text-decoration: none;
+}
+
+#btn_open_control_panel.show span {}
+
+/*****FIM Botão Painel de controle*****/
+
+/*barra (menu) painel de controle*/
+
+#control_panel_bar {
+	/*width: 100%;*/
+	text-align: center;
+	display: inline-block;
+	padding-top: 0px;
+	overflow: hidden;
+	height: 0px;
+	transition: 0.6s;
+	/*margin-bottom: 14px;*/
+	width: 100%;
+}
+
+#control_panel_bar.show {
+	padding-top: 0px;
+	background-color: rgb(248, 248, 248);
+	height: 60px;
+}
+
+#navigation {
+	text-align: right;
+	position: static;
+  background: none;
+	background-color: #eee;
+  border-bottom: 1px solid #d3d7cf;
+}
+
+#navigation ul {
+  text-align: center;
+  height: auto;
+  float: none;
+  font-size: small;
+  color: #666;
+  padding: 0;
+}
+#wrap-1 #wrap-2 {
+  padding: 0;
+  border-top: none;
+}
+
+#navigation #navigation-end {
+  width: 0px;
+  height: 0px;
+  background: none;
+  clear: both;
+}
+
+#navigation ul li{
+border-left: 1px solid rgb(187, 187, 187);
+padding: 0 14px;
+width: auto;
+margin: 12px 0;
+float: right;
+}
+#navigation ul li:hover {
+  cursor: pointer;
+  background-color: rgb(112, 112, 112);
+  color: #FFF;
+}
+
+#navigation ul li#btn_icon {
+  border: none;
+  padding: 4px;
+  margin: 0;
+  background: none;
+  cursor: auto;
+}
+
+#control_panel_bar .btn_control_panel{
+	float: none;
+}
+
+#control_panel_bar #new_content{
+	background-image: url(images/text-editor.png);
+	background-repeat: no-repeat;
+}
+
+#control_panel_bar .btn_control {
+	background-position: center 3px;
+	height: 35px;
+	padding: 40px 14px 0px 14px;
+	display: inline-block;
+	width: 100px;
+	vertical-align: top;
+	background-size: 25%;
+}
+
+#control_panel_bar .btn_menu{
+	background-position: center 3px;
+	height: 0px;
+	overflow: hidden;
+	padding: 0px;
+	display: inline-block;
+	width: 100px;
+	vertical-align: top;
+	background-size: 25%;
+	transition: 0.6s;
+}
+
+#control_panel_bar.show .btn_menu{
+	background-position: center 3px;
+	height: 35px;
+	overflow: hidden;
+	padding: 40px 14px 0px 14px;
+	display: inline-block;
+	width: 100px;
+	vertical-align: top;
+	background-size: 25%;
+}
+
+#control_panel_bar.show .btn_menu:hover{
+	overflow: visible;
+}
+
+/*Menu e SubMenu do Painel de controle*/
+#control_panel_bar a.btn_control_panel span{margin:0px; border: 0px solid gray;border-radius: 0px; background-color: transparent; padding: 0px;color: #333;display: inline-block;height: 35px;}
+
+
+#control_panel_bar .btn_control_panel ul {display: inline-block;padding-left: 0;padding-top: 0;text-align: left;margin: 0;position: relative;left: -14px;}
+
+#control_panel_bar .btn_control_panel ul:hover {}
+
+#control_panel_bar .btn_control_panel ul li {padding: 0;display: block;display: inline-block;}/*{display: block;padding-left: 0;text-align: left;margin: 0;padding: 0 1em}*/
+
+#control_panel_bar a.btn_control_panel:hover ul li{display: block;}
+
+#control_panel_bar a.btn_control_panel ul li span{height: auto;width: 140px;background-color: #eee;padding: 7px 14px;}
+
+#control_panel_bar a.btn_control_panel ul li span:hover{background-color: #ccc;}
+
+#control_panel_bar .btn_control_panel ul li ul {display: none;}
+
+#control_panel_bar .btn_control_panel ul.menu_conteudo li:hover ul {display: inline-block}
+/*FIM Menu e SubMenu do Painel de controle*/
+
+/* FIM barra (menu) painel de controle*/
+
+
+
+/****************** FIM Painel de Controle ******************/
+
+
+#assets-menu {
+    background: #E8E8E8;
+    top: 35px;
+    left: 80px;
+    min-width: 132px;
+}
+
+#assets-menu a {
+    border: 1px solid #E8E8E8;
+}
+
+#categories_menu {
+    /*max-width: 960px;*/
+	padding: 0 1em;
+    margin: auto;
+	float: left;
+}
+
+#cat_menu {
+    background: url(images/logo-ps.png) no-repeat center left;
+    height: 40px;
+    padding-left: 70px;
+
+}
+
+#cat_menu li {
+    list-style: none;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px 20px;
+    height: 100%;
+    text-transform: uppercase;
+}
+
+#cat_menu li:hover {
+    background-color: #E1E4E4;
+}
+
+#cat_menu li a {
+    line-height: 40px;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+/************* FIM Bar Psocial Style - Menu Horizontal**************/
+
+/*ajuste no content*/
+#content{margin-top: 8px;}
+
+
+/******************Footer - Rodapé**********************************/
+
+#theme-footer {
+	background-color: #eee;
+	position: relative;
+	margin-bottom: 0;
+}
+
+#footer-content {
+    background: #fff;
+}
+
+#footer-logos {
+    background: #F28F00;
+    max-width: 100%;
+    padding: 2em 0;
+    height: 49px;
+}
+
+#footer-logos div {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#footer-logos a {
+  display: block;
+  height: 49px;
+  float: left;
+}
+
+#footer-logos span {
+  display: none;
+}
+
+#footer-logos .logo-acesso {
+  background: transparent url(images/acesso-a-informacao.png) center center no-repeat;
+  width: 107px;
+}
+
+#footer-logos .logo-brasil {
+  background: transparent url(images/brasil.png) center center no-repeat;
+  width: 153px;
+}
+
+#footer-logos .logo-sgpr {
+  background: transparent url(images/sgpr.png) center center no-repeat;
+  width: 187px;
+  margin-right: 30px;
+}
+
+#footer-logos .institucionais {
+  float: right;
+}
+
+#footer-license {
+   max-width: 960px;
+   margin: 0 auto;
+   text-align: left;
+   padding: 19px;
+}
+
+#footer-license p {
+    color: #F28F00;
+	 text-align: left;
+}
+
+#user #homepage-link {
+  background: url(images/barra-menu-control.png) no-repeat 10px center;
+  margin-left: 0px;
+}
+#user #homepage-link i {
+  display: none;
+}
+
+#control_panel_bar .control-panel a {
+  margin: 0;
+  border: 0;
+  line-height: normal;
+  background-color: transparent;
+  background-size: 32px;
+  padding: 0 0 0 36px;
+  width: 120px;
+  font-size: 13px;
+  background-position: 0 0;
+  color: rgb(60, 60, 60);
+}
+#control_panel_bar .control-panel span {
+  background: none;
+  padding-left: 0;
+}
+
+.controller-profile_editor a.icon-new {
+  background-image: url(../../../images/control-panel/text-editor.png);
+}
+
+#openchat .unread-messages {
+  position: relative;
+  left: 27px;
+  border: 0;
+}

@@ -1,0 +1,7 @@
+#wrap-2 #user {
+  display: none;
+}
+
+#user .logged-in a.ctrl-panel {
+  display: none;
+}

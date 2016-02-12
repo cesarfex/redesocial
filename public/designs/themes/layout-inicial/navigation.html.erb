@@ -1,0 +1,12 @@
+<!-- *************** Painel de controle da comunidade ************** -->
+<% if profile && user %>
+  <li id="btn_settings">Configurações</li>
+  <li id="btn_aparence">Aparência</li>
+  <li id="btn_content">Conteúdo</li>
+  <li id="btn_icon"><span>&nbsp;</span></li>
+  <li id="btn_profile"><%= link_to(profile_image(profile, :icon) + content_tag(:span, profile.name), profile.public_profile_url) %></li>
+
+  <%= theme_include 'content_menu' %>
+  <%= theme_include 'appearance_menu' %>
+  <%= theme_include 'settings_menu' %>
+<% end %>

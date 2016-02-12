@@ -1,0 +1,47 @@
+<!-- Header -->
+		<div id="header">
+			<div class="container">
+					
+				<!-- Logo -->
+					<div id="logo">
+						<h1><a href="#">AugustoOnline</a></h1>
+					</div>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li class="active"><a href="index.html.erb">Homepage</a></li>
+							<li><a href="left-sidebar.html.erb">Left Sidebar</a></li>
+							<li><a href="right-sidebar.html.erb">Right Sidebar</a></li>
+							<li><a href="no-sidebar.html.erb">No Sidebar</a></li>
+						</ul>
+					</nav>
+
+			</div>
+		</div>
+	<!-- Header -->
+
+
+
+
+<% user = (session[:user] && User.find_by_id(session[:user])) || nil %>
+<%= theme_include "user_menu", :locals => {:person => user.person} if user %>
+
+<!-- Nova Barra de usuário -->
+
+<div id="top-bar" class="top" >
+	<div class="btn_control_panel btn_control" title="Painel de Controle" alt="menu">
+    <div class="layout_user">
+      <%= render :partial => 'layouts/user' %>
+    </div>
+  </div>
+
+<!--
+  <div id="categories_menu">
+    <%= theme_include 'categories' %>
+  </div>
+ -->
+  <span class="btn_home" title="Página Inicial"><a href="<%=environment.top_url%>">&nbsp;</a></span>
+</div>
+<!-- FIM Nova Barra de usuário -->
+

@@ -1,0 +1,13 @@
+.activity_menu_item a {
+  color: #ddd;
+  text-decoration: none;
+}
+.activity_menu_item:hover a {
+  color: #333;
+}
+.activity_menu_item {
+  cursor: pointer;
+}
+#navigation-control {
+  font-size: 14px;
+}

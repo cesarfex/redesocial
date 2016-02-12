@@ -1,0 +1,14 @@
+<div id="control_panel_bar" class="menu_content controller-profile_editor">
+
+<ul class="control-panel">
+  <li>
+    <%= link_to(_('Manage Content'), url_for(:controller => 'cms'), :class => 'control-panel-cms') %>
+  </li>
+  <li>
+    <% article = @article || @page %>
+    <% parent_id = ((article && article.allow_children?) ? article : nil) %>
+    <%= modal_button('new', _('New content'), :controller => 'cms', :action => 'new', :parent_id => parent_id, :cms => true) %>
+  </li>
+</ul>
+
+</div>

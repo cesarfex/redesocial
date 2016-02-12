@@ -1,0 +1,57 @@
+<div id="control_panel_bar" class="menu_settings controller-profile_editor">
+
+<ul class="control-panel">
+  <li>
+    <%= link_to(profile.control_panel_settings_button[:title],
+                             url_for(:controller => 'profile_editor', :action => 'edit'),
+                             :class => "control-panel-#{profile.control_panel_settings_button[:icon]}") %>
+  </li>
+
+  <li>
+    <%= link_to(_('Location'), url_for(:controller => 'maps', :action => 'edit_location'), :class => 'control-panel-edit-location') %>
+  </li>
+
+  <%= content_tag(:li, link_to(_('Mail settings'), url_for(:controller => 'mailconf'), :class => 'control-panel-mail')) if profile.person? && MailConf.enabled? %>
+
+  <li>
+    <%= link_to(_('Tasks'), url_for(:controller => 'tasks', :action => 'index'), :class => 'control-panel-todo') %>
+  </li>
+
+  <%= content_tag(:li, link_to(_('Change Password'), url_for(:controller => 'account', :action => 'change_password'), :class => 'control-panel-change-password')) if profile.person? %>
+
+  <%= content_tag(:li, link_to(_('Manage friends'), url_for(:controller => 'friends', :action => 'index'), :class => 'control-panel-friends')) if profile.person? %>
+
+  <%= content_tag(:li, link_to(_('Manage Members'), url_for(:controller => 'profile_members'), :class => 'control-panel-members')) if profile.organization? && user.has_permission?(:manage_memberships, profile) %>
+
+  <%= content_tag(:li, link_to(_('Manage Products/Services'), url_for(:controller => 'manage_products'), :class => 'control-panel-products')) if profile.enterprise? && environment.enabled?('products_for_enterprises') %>
+
+  <% if !environment.enabled?('disable_asset_enterprises') %>
+    <% if profile.is_validation_entity? %>
+      <li><%= link_to(_('Enterprise Validation'), url_for(:controller => 'enterprise_validation'), :class => 'control-panel-validation') %></li>
+    <% end %>
+    <% if profile.person? %>
+      <li><%= link_to(_('Favorite Enterprises'), url_for(:controller => 'favorite_enterprises'), :class => 'control-panel-favorites') %></li>
+    <% end %>
+  <% end %>
+
+  <% if profile.enterprise? %>
+    <% if profile.enabled? %>
+      <li><%= link_to(_('Disable'), url_for(:action => 'disable'), :class => 'control-panel-disable') %></li>
+    <% else %>
+      <li><%= link_to(_('Enable'), url_for(:action => 'enable'), :class => 'control-panel-enable') %></li>
+    <% end %>
+  <% end %>
+
+  <%= content_tag(:li, link_to(_('Manage my groups'), url_for(:controller => 'memberships'), :class => 'control-panel-groups')) if profile.person? %>
+
+  <li>
+    <%= link_to(_('Manage SPAM'), url_for(:controller => 'spam', :action => 'index'), :class => 'control-panel-manage-spam') %>
+  </li>
+
+  <% @plugins.dispatch(:control_panel_buttons).each do |button| %>
+    <li><%= link_to(button[:title], button[:url], :class => "control-panel-#{button[:icon]}") %></li>
+  <% end %>
+
+</ul>
+
+</div>

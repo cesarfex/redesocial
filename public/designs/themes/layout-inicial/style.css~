@@ -1,0 +1,404 @@
+@import url(../base/style.scss);
+/****************** ESTILO BASE ******************/
+@import url(cabecalho.css);
+/****************** FIM cabecalho amarelo ******************/
+@import url(style-core.css);
+@import url(user-menu.css);
+
+body, th, td, input {
+font-family: Arial, sans-serif;
+}
+
+#wrap-2 {background-color:#ebeff2;}
+
+#wrap-1 {
+  min-width: 800px;
+}
+
+#site-title {
+	position: relative;
+	top: 0;
+	width: auto;
+	height: auto;
+	display: none;
+	visibility: hidden;
+}
+
+#site-title a {
+	display: block;
+	width: auto;
+	height: auto;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+/*largura dos blocos lateral e principal*/
+
+/*Largura dos blocos funciona somente para duas colunas*/
+/*e somente com a barra lateral do lado direito*/
+/*
+.box-1,
+.no-boxes {
+margin: 0 0 0 0;
+float: left;
+width: 80%;
+}
+
+.box-1 .blocks,
+.no-boxes .blocks {
+	width: auto;
+	float: none;
+	padding: 0 1em;
+}
+
+.box-2, .box-3 {
+	position: relative;
+	float: left;
+	width: 20%;
+}
+
+.box-2 .blocks{
+	padding: 0 1em;
+}
+*/
+
+/**Nova largura dos blocos lateral e principal**/
+
+.box-1, .no-boxes {
+margin: 0 0 0 0;
+display: block;
+position: relative;
+overflow: hidden;
+}
+
+.box-1 .blocks,
+.no-boxes .blocks {
+	width: auto;
+	float: none;
+	padding: 0 1em;
+}
+
+
+.box-2/*, .box-3 */{
+position: relative;
+display: block;
+margin: 0;
+vertical-align: top;
+width: 20%;
+}
+.box-3{
+min-width: 20%;
+}
+
+.box-2 .blocks, .box-3 .blocks{
+	padding: 0 1em;
+}
+
+#content .people-block ul, #content .profile-list-block ul, #content .enterprises-block ul, #content .members-block ul, #content .communities-block ul, #content .friends-block ul, #content .fans-block ul {min-width: auto;width: auto;}
+
+.box-2 .common-profile-list-block .vcard a.profile_link, .box-3 .common-profile-list-block .vcard a.profile_link {height: 112px;max-height: 112px;}
+
+.common-profile-list-block .vcard a, .comment-actions .vcard a{}
+
+/*estilo dos blocos*/
+
+#main-content-wrapper-1,
+#main-content-wrapper-2,
+#main-content-wrapper-3,
+#main-content-wrapper-4,
+#main-content-wrapper-5,
+#main-content-wrapper-6,
+#main-content-wrapper-7,
+#main-content-wrapper-8 {
+	background: url(images/no-image.gif) no-repeat;
+}
+
+#main-content-wrapper-8 {
+  padding: 10px 20px;
+}
+
+#content .block {
+  padding-bottom: 1em;
+  margin: 0;
+}
+
+#content .block .block-inner-1 {
+  background-color: #fff;
+  box-shadow: 5px 5px 5px -2px #ddd;
+}
+
+#content .block .block-inner-2 h3~div {padding:1em;}
+
+#content .box-1 .block,
+#content .no-boxes .block{padding: 0;}
+
+#content .link-list-block{padding: 0;}
+
+#content .link-list-block li{margin: 0;}
+
+#content .link-list-block li a {
+	border-radius: 0;
+	padding: 10px 5px 10px 40px;
+	border-bottom: 1px solid #ccc;
+	background-color: #f7f9fa;
+	border-left: 3px solid #f7f9fa;
+}
+
+/*bloco lateral de menu*/
+#content .link-list-block li a.link-this-page{
+	max-width:100%;
+	width: auto;
+	border-right: 0px;
+	background-color: #257CAD;
+	color: white;
+	border-left: 3px solid #fff;
+}
+
+#content .link-list-block li a.link-this-page:hover,
+#content .link-list-block li a:hover {
+	background-color: #257CAD;
+	border-left: 3px solid #fff;
+	border-right: 0px solid #fff;
+}
+
+#profile-header {margin-bottom: 20px;}
+#content .block-title {	font-variant: inherit; margin-bottom: 0px;}
+
+/*cabeçalho dos blocos laterais*/
+#content .block h3.block-title,
+#content #content-inner .login-block .logged-user-info h2{
+	font-size: 16px;
+	text-align: left;
+	border-bottom: 1px solid #AAA;
+	padding: 0.5em;
+	background-color: #257CAD;
+	color: white;
+	font-variant: inherit;
+}
+
+/*cabeçalho do blocos principal*/
+#content .box-1 .block h3.block-title,
+#content .no-boxes .block h3.block-title {
+	color: #333;
+	font-size: 16px;
+	text-align: left;
+	border-bottom: 0px solid #AAA;
+	padding: 0px;
+	background-color: transparent;
+}
+
+/*ver todos blocos laterais*/
+#content .tags-block .block-footer-content a, #content .people-block .block-footer-content a, #content .profile-list-block .block-footer-content a, #content .enterprises-block .block-footer-content a, #content .members-block .block-footer-content a, #content .communities-block .block-footer-content a, #content .friends-block .block-footer-content a {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	font-size: 12px;
+	color: #000;
+	text-decoration: none;
+	background-color: #fff;
+	padding: 6px 20px 6px 12px;
+	border-radius: 12px;
+	background-position-x: 90%;
+}
+
+#content .tags-block .block-footer-content a:hover,
+#content .people-block .block-footer-content a:hover,
+#content .profile-list-block .block-footer-content a:hover,
+#content .enterprises-block .block-footer-content a:hover,
+#content .members-block .block-footer-content a:hover,
+#content .communities-block .block-footer-content a:hover,
+#content .friends-block .block-footer-content a:hover {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	font-size: 12px;
+	color: #000;
+	text-decoration: none;
+	background-color: #257CAD;
+	color: white;
+	padding: 6px 20px 6px 12px;
+	border-radius: 12px;
+	border: 1px solid white;
+}
+
+#content .main-block h1{
+	font-variant: inherit;
+	color: #555753;
+	text-align: left;
+	border-bottom: 0px;
+/*font-family: 'Roboto',sans-serif;*/
+	margin: 0 0 5px;
+	font-weight: 700;
+	color: #4d4d4d;
+}
+
+.search_form input[type="text"],
+#public-profile-search input[type="text"]{
+	padding: 6px 0;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+}
+
+#content form input.button.submit {
+	max-height: 34px;
+	cursor: pointer;
+	height: 34px;
+	vertical-align: top;
+	margin-top: 2px;
+	margin-left: 16px;
+}
+
+#public-profile-search, #profile-search-results form, .profile-search-block form {
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: transparent;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 0px;
+}
+
+/*telas de edição*/
+
+/*Estilo dos campos - input*/
+.formfield input, .formfield textarea {
+	background: none;
+	border: 2px solid #B0C4DE;
+	color: #333;
+	font-size: 16px;
+	border-radius: 5px;
+}
+
+#content form input.button.submit {margin-left:0px; margin-right: 16px;}
+
+/*Campo inserir arquivo*/
+input[type~="file"] {border: none;}
+
+/*formulário de criação de artigos - lado esquerdo*/
+.controller-cms div.with_media_panel {
+	float: left;
+	width: 70%;
+	display: inline-block;
+	background-color: #FFF;
+	padding: 1em;
+	vertical-align: top;
+}
+
+/*caixas de formulário da direita - Inserir imagem e buscar imagem*/
+.text-editor-sidebar{
+	float: left;
+	position: relative;
+	width: 20%;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 3%;
+	right: 0;
+	top: 0;
+}
+
+/*Campo inserir arquivo - lado direito*/
+.text-editor-sidebar .text-editor-sidebar-box #media-upload-form form input[type~="file"]{font-size: x-small;}
+
+/*campo de busca de mídia*/
+.text-editor-sidebar #media-search-box .formfield input {
+	display: inline-block;
+	width: 85% !important;
+}
+
+/*botão de busca de mídia*/
+#content .text-editor-sidebar #media-search-box form input.button.submit {
+	max-height: 24px;
+	cursor: pointer;
+	height: 34px;
+	vertical-align: top;
+	margin-top: 2px;
+	margin-left: 0;
+	margin-right: 0;
+	width: 0px;
+	color: #EEE;
+	display: inline-block;
+}
+
+/*botão cancelar*/
+#content a.button.with-text {
+line-height: 32px;
+height: 32px;
+margin-top: 2px;
+}
+
+.comment-details .menu-submenu {
+  right: 3px;
+}
+
+.vote-actions {
+  top: 30px;
+}
+
+.ui-widget-header {
+  background: none;
+  border-width: 0px 0px 1px 0px;
+}
+
+#leave_scrap_content_left {
+  float: none;
+  text-align: left;
+}
+
+#leave_scrap textarea {
+  float: left;
+}
+
+#profile-activity ul, #profile-network ul, #profile-wall ul {
+  width: 100%;
+}
+
+.profile-activity-lead {
+  width: 90%;
+}
+
+/* Plugin para curtir artigos e comentÃ¡rios */
+
+.action .dislike:before {
+  background: url(images/negative-hand.png) no-repeat;
+}
+
+.action .like:before {
+  background: url(images/positive-hand.png) no-repeat;
+}
+
+.action .action-icon:before {
+  background-size: 20px;
+  content: '';
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.vote-action .like-action-active .action-icon {
+  opacity: 1;
+}
+
+.vote-action .action-icon {
+  opacity: 0.5;
+}
+
+#article .action .action-icon {
+  top: 3px;
+}
+
+#article .like-action .like-action-counter {
+  color: #2A8C32;
+}
+
+#article .dislike-action .like-action-counter {
+  color: #CC0000;
+}
+
+.vote-actions {
+  position: relative;
+  right: 0;
+  top: 0;
+}

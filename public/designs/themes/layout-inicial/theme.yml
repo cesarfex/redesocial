@@ -1,0 +1,6 @@
+name: "Participa-WEB"
+#layout: "../../../public/designs/themes/participa-web/index"
+layout: "application-ng"
+jquery_theme: "smoothness"
+icon_theme: [default, pidgin]
+public: true

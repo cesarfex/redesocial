@@ -1,0 +1,17 @@
+<div id="control_panel_bar" class="menu_aparence controller-profile_editor">
+
+<ul class="control-panel">
+  <li>
+    <%= link_to(_('Edit sideboxes'), url_for(:controller => 'profile_design', :action => 'index'), :class => 'control-panel-blocks') %>
+  </li>
+
+  <li>
+    <%= link_to(_('Edit Appearance'), url_for(:controller => 'profile_themes', :action => 'index'), :class => 'control-panel-design-editor') %>
+  </li>
+
+  <li>
+    <%= link_to(_('Edit Header and Footer'), url_for(:controller => 'profile_editor', :action => 'header_footer'), :class => 'control-panel-header-and-footer') unless profile.enterprise? && environment.enabled?('disable_header_and_footer') && !user.is_admin?(environment) %>
+  </li>
+</ul>
+
+</div>

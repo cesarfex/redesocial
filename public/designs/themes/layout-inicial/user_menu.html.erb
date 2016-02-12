@@ -1,0 +1,21 @@
+<div id="wrap-0">
+	<div id="navigation-control">
+		<div class="perfil">
+			<ul class="profile_menu">
+				<li class="name"><h1 class="title"><%= person.name %></h1></li>
+				<li class="picture"><%= link_to(profile_image(person, :big), person.public_profile_url) %></li>
+				<!--<li class="user_status online"><span>&#9679;</span> Disponível</li>-->
+			</ul>
+		</div>
+		<%#= render :partial => 'layouts/user' %>
+		<div class="menu_user">
+			<ul class="activity_menu">
+				<li class="activity_menu_item"><%= link_to _("Network"), url_for(person.public_profile_url.merge(:anchor => 'profile-network')) %></li>
+				<li class="activity_menu_item"><%= link_to _("Wall"), url_for(person.public_profile_url.merge(:anchor => 'profile-wall')) %></li>
+				<li class="activity_menu_item"><%= link_to _("Friends"), url_for(:controller => :profile, :action => :friends, :profile => person.identifier) %></li>
+				<li class="activity_menu_item"><%= link_to _("Communities"), url_for(:controller => :profile, :action => :communities, :profile => person.identifier) %></li>
+				<li class="activity_menu_item"><%= link_to _("Agenda"), url_for(:controller => :profile, :action => :events, :profile => person.identifier) %></li>
+			</ul>
+		</div>
+ 	</div>
+</div>
