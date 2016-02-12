@@ -1,0 +1,4 @@
+name: "Rede Moinho"
+layout: "cirandas-responsive"
+icon_theme: [awesome, pidgin]
+responsive: true

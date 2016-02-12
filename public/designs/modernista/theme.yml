@@ -1,0 +1,4 @@
+name: "Base Modernista"
+layout: "cirandas-responsive" # don't change
+icon_theme: [awesome, pidgin]
+responsive: true

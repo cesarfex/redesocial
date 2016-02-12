@@ -1,0 +1,13 @@
+<li id="navigation-contents"><%= search_contents_menu %></li>
+<li id="navigation-people"><%= search_people_menu %></li>
+<li id="navigation-products"><%= link_to _('Products'), host: environment.default_hostname, action: :products, controller: :search %></li>
+<li id="navigation-enterprises"><%= link_to _('Enterprises'), host: environment.default_hostname, action: :enterprises, controller: :search %></li>
+<li id="navigation-communities"><%= search_communities_menu %></li>
+<li id="navigation-events"><%= link_to _('Events'), host: environment.default_hostname, action: :events, controller: :search %></li>
+
+<% calculate_spacing = true if calculate_spacing.nil? %>
+
+<script type="text/javascript">
+  if (typeof cirandas_theme === 'undefined') cirandas_theme = {};
+  cirandas_theme.calculate_spacing = <%= (!! calculate_spacing).to_json %>;
+</script>

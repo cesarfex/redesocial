@@ -1,0 +1,50 @@
+@import '../../cirandas/stylesheets/cirandas';
+@import '../../cirandas/stylesheets/small';
+@import url(//fonts.googleapis.com/css?family=Gloria+Hallelujah);
+
+#theme-header {
+  left: 0;
+  width: 100%;
+}
+body {
+  background-color: #996;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-image: url("http://bemdaterra.org/content/wp-content/themes/bemdaterra/img/bg.jpg");
+}
+#wrap-1 {
+  margin-top: 180px;
+}
+#brand {
+  position: absolute;
+  top: 60px;
+  left: 140px;
+}
+#slogan-header {
+  position: absolute;
+  top: 110px;
+  font-family: Gloria Hallelujah;
+  font-size: 20px;
+  color: #FFF;
+  left: 750px;
+  line-height: 150%;
+}
+#wrap-2 {
+  padding-top: 0;
+}
+#content, #consumers-coop-plugin-header {
+  margin-top: 0;
+}
+#consumers-coop-plugin-header .menu-logo {
+  height: auto;
+}
+#consumers-coop-plugin-header #menu-title,
+#consumers-coop-plugin-header .menu-header {
+  display: none;
+}
+
+.purechat {
+  display: none;
+}
+

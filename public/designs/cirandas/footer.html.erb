@@ -1,0 +1,22 @@
+<div id="footer-content">
+
+  <div id="footer-left">
+    <%= language_chooser %>
+    <p><a href="http://noosfero.org">Noosfero</a>, versão <%= Noosfero::VERSION %></p>
+  </div>
+
+  <div id="footer-middle">
+    <p>Veja quem são nossos <a href="http://cirandas.net/fbes/apoios-ao-cirandas">Parceiros e apoiadores</a></p>
+  </div>
+
+  <div id="footer-right">
+    <p id="footer-fbes">Um projeto do <a href="http://www.fbes.org.br">FBES</a>, Fórum Brasileiro de Economia Solidária</p>
+  </div>
+
+  <div class="clean"></div>
+</div>
+
+<% javascript_tag do %>
+  <%= render :file => "#{Rails.root}/public/designs/themes/cirandas/content_update.js.erb" %>
+<% end %>
+

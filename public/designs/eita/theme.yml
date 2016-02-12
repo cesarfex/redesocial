@@ -1,0 +1,5 @@
+name: "EITA"
+layout: "cirandas" # don't change
+icon_theme: [default, pidgin]
+owner_type: 'Profile'
+owner_id: 31150
