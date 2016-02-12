@@ -1,0 +1,5 @@
+name: "Padrão verde"
+layout: "cirandas-responsive"
+responsive: true
+icon_theme: [awesome, pidgin]
+owner_type: 'Enterprise'

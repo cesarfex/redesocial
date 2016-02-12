@@ -1,0 +1,4 @@
+name: "Base do tema Coral"
+layout: "cirandas-responsive" # don't change
+icon_theme: [awesome, pidgin]
+responsive: true

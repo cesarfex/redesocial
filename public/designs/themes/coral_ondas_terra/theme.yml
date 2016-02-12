@@ -1,0 +1,5 @@
+name: "Coral ondas da terra"
+layout: "cirandas-responsive" # don't change
+icon_theme: [awesome, pidgin]
+owner_type: Enterprise
+responsive: true
